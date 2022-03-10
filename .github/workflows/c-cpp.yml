@@ -1,0 +1,41 @@
+Started by upstream project "PullRequestTester" build number 7038
+originally caused by:
+ GitHub pull request #7639 of commit f46f48dcd601bf1a4defa09efea398cd2976b86f, no merge conflicts.
+Running as SYSTEM
+[EnvInject] - Loading node environment variables.
+Building remotely on windows_vs2010 (windows vs2010) in workspace c:\jenkins-freerdp\workspace\windows_msbuild_vs2010
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/FreeRDP/FreeRDP.git
+ > c:\Program Files\Git\bin\git.exe init c:\jenkins-freerdp\workspace\windows_msbuild_vs2010\source # timeout=10
+Fetching upstream changes from https://github.com/FreeRDP/FreeRDP.git
+ > c:\Program Files\Git\bin\git.exe --version # timeout=10
+ > git --version # 'git version 2.35.1.windows.2'
+ > c:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/FreeRDP/FreeRDP.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > c:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/FreeRDP/FreeRDP.git # timeout=10
+ > c:\Program Files\Git\bin\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > c:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/FreeRDP/FreeRDP.git # timeout=10
+Pruning obsolete local tags that do not exist on remotes
+ > c:\Program Files\Git\bin\git.exe show-ref --tags -d # timeout=10
+ > c:\Program Files\Git\bin\git.exe ls-remote -t -- https://github.com/FreeRDP/FreeRDP.git # timeout=10
+Pruning obsolete local branches
+Fetching upstream changes from https://github.com/FreeRDP/FreeRDP.git
+ > c:\Program Files\Git\bin\git.exe fetch --tags --force --progress --prune -- https://github.com/FreeRDP/FreeRDP.git +refs/pull/*:refs/remotes/origin/pr/* # timeout=10
+ > c:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/pr/7639/merge^{commit}" # timeout=10
+JENKINS-19022: warning: possible memory leak due to Git plugin usage; see: https://wiki.jenkins.io/display/JENKINS/Remove+Git+Plugin+BuildsByBranch+BuildData
+Checking out Revision 3a23a617a6df6d80eebe9686c6a70214a420f1b4 (refs/remotes/origin/pr/7639/merge)
+ > c:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > c:\Program Files\Git\bin\git.exe checkout -f 3a23a617a6df6d80eebe9686c6a70214a420f1b4 # timeout=10
+Commit message: "Merge f46f48dcd601bf1a4defa09efea398cd2976b86f into 80cd8dcdc3e0e8e0f4ca6766fa42501356866914"
+First time build. Skipping changelog.
+Triggering windows_msbuild_vs2010 » win64,vs2010
+windows_msbuild_vs2010 » win64,vs2010 completed with result SUCCESS
+Started calculate disk usage of build
+Finished Calculation of disk usage of build in 0 seconds
+Started calculate disk usage of workspace
+Finished Calculation of disk usage of workspace in  3 second
+Finished: SUCCESS
